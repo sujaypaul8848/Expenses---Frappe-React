@@ -1,0 +1,41 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "14.62.1"
+    },
+    "expense_tracker": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "1c2941d90f64ce9803efbcf750a40a1976d95729",
+            "branch": "master"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "0.0.1"
+    },
+    "doppio": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "dcb63aa9a3e72f552861f8a9f0f3894b5f25f8dc",
+            "branch": "master"
+        },
+        "required": [],
+        "idx": 3,
+        "version": "0.0.1"
+    },
+    "frappe_types": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "2ee76afe8a0cef13a2fb32c41e10f10fd4fbe889",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 4,
+        "version": "0.0.1"
+    }
+}

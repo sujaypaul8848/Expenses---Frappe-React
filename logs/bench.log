@@ -1,0 +1,57 @@
+2024-01-03 16:53:03,240 DEBUG cd frappe-bench && python3 -m venv env
+2024-01-03 16:53:08,623 DEBUG cd frappe-bench && /home/sujay/react/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-01-03 16:53:11,948 DEBUG cd frappe-bench && /home/sujay/react/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-01-03 16:53:13,985 LOG Getting frappe
+2024-01-03 16:53:13,986 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-14 --depth 1 --origin upstream
+2024-01-03 16:53:20,470 LOG Installing frappe
+2024-01-03 16:53:20,470 DEBUG cd /home/sujay/react/frappe-bench && /home/sujay/react/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/sujay/react/frappe-bench/apps/frappe 
+2024-01-03 16:54:11,006 DEBUG cd /home/sujay/react/frappe-bench/apps/frappe && yarn install
+2024-01-03 16:54:35,261 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-01-03 16:54:35,262 DEBUG cd frappe-bench && bench build
+2024-01-03 16:54:35,519 INFO /usr/local/bin/bench build
+2024-01-03 16:55:10,597 LOG setting up backups
+2024-01-03 16:55:10,665 LOG backups were set up
+2024-01-03 16:55:10,667 INFO Bench frappe-bench initialized
+2024-01-03 16:56:01,416 INFO /usr/local/bin/bench set-config -g developer_mode 1
+2024-01-03 16:57:21,982 INFO /usr/local/bin/bench new-app expense_tracker
+2024-01-03 16:57:21,989 LOG creating new app expense_tracker
+2024-01-03 16:58:07,078 LOG Installing expense_tracker
+2024-01-03 16:58:07,079 DEBUG cd /home/sujay/react/frappe-bench && /home/sujay/react/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/sujay/react/frappe-bench/apps/expense_tracker 
+2024-01-03 16:58:11,139 DEBUG bench build --app expense_tracker
+2024-01-03 16:58:11,319 INFO /usr/local/bin/bench build --app expense_tracker
+2024-01-03 16:58:17,492 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-01-03 17:01:04,831 INFO /usr/local/bin/bench get-app https://github.com/NagariaHussain/doppio.git
+2024-01-03 17:01:04,845 LOG Getting doppio
+2024-01-03 17:01:04,845 DEBUG cd ./apps && git clone https://github.com/NagariaHussain/doppio.git  --depth 1 --origin upstream
+2024-01-03 17:01:05,743 LOG Installing doppio
+2024-01-03 17:01:05,886 DEBUG cd /home/sujay/react/frappe-bench && /home/sujay/react/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/sujay/react/frappe-bench/apps/doppio 
+2024-01-03 17:01:08,370 DEBUG cd /home/sujay/react/frappe-bench/apps/doppio && yarn install
+2024-01-03 17:01:12,245 DEBUG bench build --app doppio
+2024-01-03 17:01:12,380 INFO /usr/local/bin/bench build --app doppio
+2024-01-03 17:01:17,824 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-01-03 17:13:57,409 INFO /usr/local/bin/bench get-app https://github.com/The-Commit-Company/frappe-types.git
+2024-01-03 17:13:57,418 LOG Getting frappe-types
+2024-01-03 17:13:57,418 DEBUG cd ./apps && git clone https://github.com/The-Commit-Company/frappe-types.git  --depth 1 --origin upstream
+2024-01-03 17:13:58,289 LOG Installing frappe_types
+2024-01-03 17:13:58,469 DEBUG cd /home/sujay/react/frappe-bench && /home/sujay/react/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/sujay/react/frappe-bench/apps/frappe_types 
+2024-01-03 17:14:00,757 DEBUG bench build --app frappe_types
+2024-01-03 17:14:00,892 INFO /usr/local/bin/bench build --app frappe_types
+2024-01-03 17:14:06,496 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-01-03 17:14:33,369 INFO /usr/local/bin/bench new-site expense.test
+2024-01-03 17:14:51,158 INFO /usr/local/bin/bench new-site expense.test
+2024-01-03 17:15:06,828 INFO /usr/local/bin/bench new-site expense.com
+2024-01-03 17:18:47,483 INFO /usr/local/bin/bench --site expense.com install-app doppio
+2024-01-03 17:19:54,661 INFO /usr/local/bin/bench new-site expense.com
+2024-01-03 17:20:27,936 INFO /usr/local/bin/bench new-site expense.in
+2024-01-03 17:23:13,988 INFO /usr/local/bin/bench --site expense.in install-app doppio
+2024-01-03 17:23:34,171 INFO /usr/local/bin/bench --site expense.in install-app frappe_types
+2024-01-03 17:23:35,530 INFO /usr/local/bin/bench config set-common-config -c frappe_types_pause_generation 1
+2024-01-03 17:23:37,058 INFO /usr/local/bin/bench config set-common-config -c frappe_types_pause_generation 0
+2024-01-03 17:23:58,219 INFO /usr/local/bin/bench use expense.in
+2024-01-03 17:24:02,827 INFO /usr/local/bin/bench start
+2024-01-03 17:24:03,527 INFO /usr/local/bin/bench schedule
+2024-01-03 17:24:03,531 INFO /usr/local/bin/bench watch
+2024-01-03 17:24:03,545 INFO /usr/local/bin/bench serve --port 8000
+2024-01-03 17:24:03,581 INFO /usr/local/bin/bench worker
+2024-01-03 17:26:05,275 INFO /usr/local/bin/bench add-spa
+2024-01-03 18:00:02,116 INFO /usr/local/bin/bench --verbose --site all backup
